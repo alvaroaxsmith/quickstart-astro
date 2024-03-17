@@ -1,11 +1,12 @@
 ---
-title: Minha Terceira Postagem no Blog
-author: Aluno de Astro
-description: "Eu tive alguns desafios, mas perguntar na comunidade realmente me ajudou!"
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Minha Primeira Postagem no Blog'
+pubDate: 2022-07-01
+description: 'Esta é a primeira postagem do meu novo blog Astro.'
+author: 'Alvaro'
 image:
-    url: "https://docs.astro.build/assets/rays.webp"
-    alt: "Miniaturas de raios do Astro."
-pubDate: 2022-07-15
-tags: ["astro", "aprendendo em público", "contratempos", "comunidade"]
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'A logo completa do Astro.'
+tags: ["astro", "blogueirando", "aprendendo em público"]
 ---
 Nem tudo está sendo fácil, mas estou gostando de construir com Astro. E a [comunidade no Discord](https://astro.build/chat) é realmente amigável e cooperativa!
