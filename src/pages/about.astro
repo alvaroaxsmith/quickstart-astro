@@ -12,12 +12,10 @@ const identify = {
 };
 
 const skills = [
-    "HTML",
-    "CSS",
     "JavaScript",
+    "Typescript",
     "React",
     "Astro",
-    "Escrever Documentação",
 ];
 ---
 
@@ -27,7 +25,7 @@ const skills = [
         <ul>
             <li>Meu nome é {identify.firstName}.</li>
             <li>
-                Eu moro no {identify.country} e eu trabalho como uma {
+                Eu moro no {identify.country} e eu trabalho como {
                     identify.occupation
                 }.
             </li>
@@ -40,7 +38,7 @@ const skills = [
                 )
             }
         </ul>
-        <p>Minhas habilidades são:</p>
+        <p>Alguma das minhas habilidades são:</p>
         <ul>
             {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
