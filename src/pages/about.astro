@@ -1,7 +1,5 @@
 ---
 import "../styles/global.css";
-import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Sobre Mim";
@@ -14,12 +12,10 @@ const identify = {
 };
 
 const skills = [
-    "HTML",
-    "CSS",
     "JavaScript",
+    "Typescript",
     "React",
     "Astro",
-    "Escrever Documentação",
 ];
 
 const happy = true;
@@ -33,7 +29,7 @@ const goal = 3;
         <ul>
             <li>Meu nome é {identify.firstName}.</li>
             <li>
-                Eu moro no {identify.country} e eu trabalho como uma {
+                Eu moro no {identify.country} e eu trabalho como {
                     identify.occupation
                 }.
             </li>
@@ -46,7 +42,7 @@ const goal = 3;
                 )
             }
         </ul>
-        <p>Minhas habilidades são:</p>
+        <p>Alguma das minhas habilidades são:</p>
         <ul>
             {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
