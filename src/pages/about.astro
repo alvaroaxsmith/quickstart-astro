@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Sobre Mim";
 
@@ -27,17 +28,7 @@ const goal = 3;
 ---
 
 <html lang="pt-br">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
-    </head>
-    <body>
-        <Header />
-
-        <h1>{pageTitle}</h1>
+    <BaseLayout pageTitle={pageTitle}>
         <p>Aqui estão alguns fatos sobre mim:</p>
         <ul>
             <li>Meu nome é {identify.firstName}.</li>
@@ -70,9 +61,5 @@ const goal = 3;
                 <p>Minha meta não é em 3 dias.</p>
             )
         }
-        <Footer />
-        <script>
-            import "../scripts/menu.js";
-        </script>
-    </body>
+    </BaseLayout pageTitle={pageTitle}>
 </html>
