@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Minha Primeira Postagem no Blog'
+title: 'Minha Terceira Postagem no Blog'
 pubDate: 2022-07-01
-description: 'Esta é a primeira postagem do meu novo blog Astro.'
+description: 'Esta é a terceira postagem do meu novo blog Astro.'
 author: 'Alvaro'
 image:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
